@@ -1,0 +1,25 @@
+.container{
+	max-width: 800px !important;
+}
+
+.blog-wrapper{
+	min-height: 100vh;
+	background: rgba(0,0,0,0.05);
+
+	.post-detail{
+		box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+	}
+	h3, .frequency-suggess{
+		font-family: 'Work Sans';
+	}
+	footer{
+		font-size: 14px;
+	}
+
+	.frequency-suggess{
+		font-weight: bold;
+	}
+}

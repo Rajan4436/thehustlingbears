@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+@import "actiontext";
+@import "posts";
+@import "bootstrap/dist/css/bootstrap";
+@import "trix/dist/trix.css";
+
+$gaps: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Extend or adjust this array with values you want to use (in pixels)
+$sides: (top, bottom, left, right); 
+
+@each $gap in $gaps {
+  .m-#{$gap} {
+    margin: #{$gap}px !important;
+  }
+
+  .p-#{$gap} {
+  	padding: #{$gap}px !important;
+  }
+
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$gap} {
+      margin-#{$side}: #{$gap}px !important;
+    }
+  
+    .p-#{str-slice($side, 0, 1)}-#{$gap} {
+      padding-#{$side}: #{$gap}px !important;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="p-30">
+
+
+		<p>
+		  <strong>Frequency:</strong>
+		  <%= @plan.frequency %>
+		</p>
+
+		<p>
+		  <strong>Link:</strong>
+		  <%= @plan.link %>
+		</p>
+
+		<p>
+		  <strong>Text:</strong>
+		  <%= @plan.text %>
+		</p>
+
+		<%= link_to 'Edit', edit_plan_path(@plan) %> |
+		<%= link_to 'Back', plans_path %>
+</div>
+</div>

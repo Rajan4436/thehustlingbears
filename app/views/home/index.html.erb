@@ -1,0 +1,359 @@
+<style type="text/css">
+@media only screen and (max-width: 992px) {
+	
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+	
+	.main-area{ position: relative; height: 200vh; }
+
+
+	/* ---------------------------------
+	3. RIGHT SECTION
+	--------------------------------- */
+
+	.right-section{ float: none; width: 100%; height: 50%; }
+	
+	.right-section .main-content{ padding: 40px 0; }
+	
+	.main-content .email-input-area{ width: 100%; }
+	
+	.main-content .email-input-area .email-input{ padding: 0 115px 0 20px; }
+	
+	.main-content .email-input-area .submit-btn{ width: 80px; } 
+	
+	.right-section .footer-icons > li > a > i{ height: 30px; line-height: 28px; width: 30px; }
+	
+	
+	/* ---------------------------------
+	4. LEFT SECTION
+	--------------------------------- */
+
+	.left-section{ position: static; width: 100%; height: 50%; }
+
+	.date-countdown{ width: 100%; }
+	
+	.date-countdown .time_circles > div > h4{ font-size: .7em!important; }
+
+}
+
+
+/* Screens Resolution : 767px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+	
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+
+	p{ line-height: 1.4; }
+
+	h1{ font-size: 2.3em !important; line-height: 1; }
+	h2{ font-size: 2.0em !important; line-height: 1.1; }
+	h3{ font-size: 1.8em !important; }
+	h4{ font-size: 1.2em !important; }
+
+
+	#email{
+		font-size: 1.4rem;
+	}
+
+	#opt-in-yes{
+		display: none;
+		width: 100%;
+		font-size: 1.4rem;
+	}
+
+	.section-gap-full{
+		padding: 50px 10px;
+	} 
+
+}
+
+html, body{ background: #000; font-size: 100%; height: 100%; width: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
+
+
+body{ font-size: 16px; font-family: 'Open Sans', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; overflow-x: hidden; 
+	color: #333; 
+	background: url(<%= asset_path("thb-bg.png") %>) center center no-repeat; 
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+
+h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+
+h1,h2,h3{ font-family: 'Poppins', sans-serif; }
+
+p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
+
+h1{ font-size: 3.5em; line-height: 1; color:#fff !important; }
+h2{ font-size: 3em; line-height: 1.1; color:#fff !important; }
+h3{ font-size: 2.5em; color:#fff !important; }
+h4{ font-size: 1.5em; color:#fff !important; }
+h5{ font-size: 1.2em; color:#fff !important; }
+h6{ font-size: .9em; color:#fff !important; letter-spacing: 1px; }
+
+a, button{ display: inline-block; text-decoration: none; color: inherit; transition: all .3s; line-height: 1; }
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ text-decoration: none; color: #E45F74; }
+
+b{ font-weight: 500; }
+
+img{ width: 100%; }
+
+li{ list-style: none; display: inline-block; }
+
+span{ display: inline-block; }
+
+button{ outline: 0; border: 0; background: none; cursor: pointer; }
+
+b.light-color{ color: #444; }
+
+.icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
+
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+.center-text{ text-align: center; } 
+
+.display-table{ display: table; height: 100%; width: 100%; }
+
+.display-table-cell{ display: table-cell; vertical-align: middle; }
+
+
+::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+::-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+:-ms-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+:-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+
+.full-height{ height: 100%; }
+
+.position-static{ position: static; }
+
+.font-white{ color: #fff !important; }
+
+.main-area{ position: relative; height: 100vh; background: #0C0D0F; color: #fff; }
+
+
+/* ---------------------------------
+3. LEFT SECTION
+--------------------------------- */
+
+.left-section{ position: absolute; top: 0; bottom: 0; left: 0; width: 50%; background-size: cover; }
+
+
+#normal-countdown{ text-align: center; }
+
+#normal-countdown .time-sec{ position: relative; display: inline-block; margin: 2.5%; height: 120px; width: 120px; 
+	border-radius: 100px; background: #fff; box-shadow: 0px 0px 0px 5px rgba(255,255,255,.4); color: #F84982; }
+
+#normal-countdown .time-sec .main-time{ font-weight: 500; line-height: 100px; }
+
+#normal-countdown .time-sec span{ position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); }
+
+#opt-in-yes{
+	display: none;
+}
+button{
+	font-size: 22px !important;
+}
+
+
+
+/* ---------------------------------
+4. RIGHT SECTION
+--------------------------------- */
+
+.logo-wrap{
+	width: 200px;
+	margin: auto;
+}
+
+.right-section{ float: right; width: 100%; position: relative; padding: 0 60px; }
+
+.right-section .logo{ position: absolute; top: 40px; height: 30px; }
+
+.right-section .logo img{ height: 100%; width: auto; } 
+
+
+.right-section .main-content{ padding: 40px 40px 40px 0; }
+
+.main-content .title{ margin-bottom: 15px; color: #fff; }
+
+.main-content .desc{ color: #eee; }
+
+.main-content .email-input-area{ margin: 40px 0 20px; position: relative; width: 400px; height: 47px; }
+
+.main-content .email-input-area .email-input{ width: 100%; position: absolute; top: 0; bottom: 0; left: 0; 
+	border-radius: 2px; border: 0; outline: 0; padding: 0 140px 0 25px; transition: all .2s; background: #F1F2F3; 
+	box-shadow: inset 0 0 1px rgba(0,0,0,.1); border: 1px solid transparent; }
+
+.main-content .email-input-area .email-input:focus{ border-color: #f89fbc; }
+
+
+.main-content .email-input-area .submit-btn{ width: 120px; text-align: center; position: absolute; top: 0; bottom: 0; 
+	right: 0; font-size: .9em; outline: 0; border-radius: 0 2px 2px 0; transition: all .3s; background: #F84982; color: #fff; }
+
+.main-content .email-input-area .submit-btn:hover{ background: #e40b52; }
+
+
+.main-content .post-desc{ color: #999; }
+
+
+.right-section .footer-icons{ position: absolute; bottom: 30px;}
+
+.right-section .footer-icons > li > a{ display: inline-block; font-size: 1.07em; padding: 0 0px; }
+
+.right-section .footer-icons > li:first-child{ margin-right: 10px; }
+
+.right-section .footer-icons > li > a > i{ display: inline-block; height: 35px; line-height: 33px; 
+	transition: all .2s; border-radius: 40px; text-align: center; width: 35px; }
+
+.right-section .footer-icons > li > a:hover > i{ border: 1px solid; }
+
+.right-section .footer-icons > li > a > i[class*="facebook"]{ color: #2A61D6; border-color: #2A61D6; }
+.right-section .footer-icons > li > a > i[class*="twitter"]{ color: #3AA4F8; border-color: #3AA4F8; }
+.right-section .footer-icons > li > a > i[class*="google"]{ color: #F43846; border-color: #F43846; }
+.right-section .footer-icons > li > a > i[class*="instagram"]{ color: #8F614A; border-color: #8F614A; }
+.right-section .footer-icons > li > a > i[class*="pinterest"]{ color: #E1C013; border-color: #E1C013; }
+
+#email{
+	font-size: 24px;
+}
+
+</style>
+
+<section class="section-gap-full text-center font-white" id="feature-section">
+  <div class="container">
+    <div class="row align-items-center feature-wrap" style="color: #000;">
+      <div class="col-lg-12 m-b-30">
+      	<div class="logo-wrap">
+      		<%= image_tag "thb.png", class: "img-fluid" %>
+      	</div>
+    		<small style="color: #fff !important;">Presents Newsletter on </small>
+      	<h1 class="text-center m-t-20" style="font-family: 'Raleway', sans-serif; font-weight: bold;">
+      		Organic Growth strategies 💡
+        </h1>
+      	<h4 class="text-center m-t-20" style="font-weight: normal; font-weight: bold;">(extracted from discussion forums and deep comments sections)</h4>
+      </div>
+
+      <div class="text-center col-lg-8 offset-lg-2">
+      	<h5 id="lines" style="font-family: 'Raleway', sans-serif; line-height: 30px !important;">
+					In total <b>500</b> practical & tested growth strategies given by successful Indie makers at various discussion forums.  Get these FREE by subscribing 
+					<br>
+      	</h5>
+				<div class="opt-in-form">
+					<input type="text" id="first-name" name="first-name"  placeholder="First Name" required class="form-control m-b-30  m-t-30" style="border: 1px solid #000;">
+					<input type="text" id="last-name" name="last-name"  placeholder="Last Name" required class="form-control m-b-30  m-t-30" style="border: 1px solid #000;">
+					<!-- <label class="text-white text-left">How did you find us?</label> -->
+					<select id="source" class="form-control">
+						<option value="">How did you find us?</option>
+						<option value="ph">Product Hunt</option>
+						<option value="fb">Facebook</option>
+						<option value="insta">Instgram</option>
+						<option value="search">Search</option>
+						<option value="other">Other</option>
+					</select>
+					<input type="email" id="email" name="email"  placeholder="Email Here" required class="form-control m-b-30 p-30 m-t-30" style="border: 1px solid #000;">
+					<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+					<input type="hidden" name="action" value="validate_captcha">
+					<button id="opt-in-yes"  class="btn btn-info p-20">Join for Free</button>
+					<!-- <button type="button" class="btn btn-primary  p-20" data-toggle="modal" data-target="#myModal">
+					  Show me a sample
+					</button> -->
+
+				</div>
+				<div class="text-center thanks p-30" style="display: none;">
+					<h3 class="m-b-20">Thanks a lot</h3>
+					<h5 class="text-center">
+						Thank you for subscribing.
+						<br>
+						Please check your mail for onboarding instructions.
+						<br>
+						<br>
+						Let's meet on the other side 😁
+					</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldj_ssZAAAAAJjegmrgOykrVpt7Ur0LGKWQCX2R"></script>
+
+
+<script type="text/javascript">
+	grecaptcha.ready(function() {
+  // do request for recaptcha token
+  // response is promise with passed token
+      grecaptcha.execute('6Ldj_ssZAAAAAJjegmrgOykrVpt7Ur0LGKWQCX2R', {action:'validate_captcha'}).then(function(token) {
+          // add token value to form
+          document.getElementById('g-recaptcha-response').value = token;
+          $("#opt-in-yes").fadeIn()
+      });
+  });	
+
+  function isEmail(email) {
+	  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	  return regex.test(email);
+	}
+
+	$("#opt-in-yes").on("click", function(){
+		email = $("#email").val()
+		firstName = $("#first-name").val()
+		lastName = $("#last-name").val()
+		source = $("#source").val()
+
+		if (!firstName) {
+			toastr["error"]("Invalid First Name")
+			return
+		}
+		if (!lastName) {
+			toastr["error"]("Invalid Last Name")
+			return
+		}
+		if (!source) {
+			toastr["error"]("Please select source")
+			return
+		}
+
+		if (isEmail(email)){
+			$.ajax({
+				url: "/opt_in",
+				method: "POST",
+				data: { 
+					email : email,
+					firstName: firstName,
+					lastName: lastName,
+					source: source,
+					type: "hb",
+					recaptchaResponse: $("#g-recaptcha-response").val()
+				},
+				success: function(res){
+					if (res.status == 200) {
+						$(".opt-in-form, #lines").hide()
+						$(".thanks").show()
+					}else{
+						console.log(res)
+						toastr["error"](res.error)
+					}
+				}
+			})
+		}else{
+			toastr["error"]("Invalid Email")
+		}
+	})
+</script>
