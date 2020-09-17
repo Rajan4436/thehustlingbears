@@ -36,6 +36,14 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
+  gem "capistrano", "~> 3.11", require: false
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-rails-console', require: false
+  gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rake', require: false
   gem 'pry-nav'
 end
 
